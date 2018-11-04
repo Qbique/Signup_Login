@@ -2,17 +2,17 @@ package com;
 
  class User {
 
-    private String usermname;
+    private String username;
     private String password;
 
     User(String username, String password) {
-        this.usermname = username;
+        this.username = username;
         this.password  = password;
     }
 
     @Override
     public String toString(){
-        return "username: " + this.usermname +  ", "+ "password: " + this.password;
+        return "username: " + this.username +  ", "+ "password: " + this.password;
     }
 
     @Override
@@ -22,11 +22,11 @@ package com;
 
         User user = (User) o;
 
-        return usermname.equals(user.usermname);
+        return username.equals(user.username);
 }
 
     @Override
     public int hashCode() {
-        return usermname.hashCode();
+        return username.hashCode();
     }
 }
