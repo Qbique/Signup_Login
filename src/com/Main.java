@@ -24,7 +24,7 @@ public class Main {
                 }
 
                 if (menuOptionUserInserted == 2) {
-
+                    funcionalities.logIn();
                 }
 
                 initialPrinting();
