@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Funcionalities {
+class Funcionalities {
 
     List<User> signedUpUsers = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
-    public void signUp() {
+    void signUp() {
         System.out.println("Please insert username");
         String usernameInput = scanner.next();
 
@@ -25,7 +25,7 @@ public class Funcionalities {
         }
     }
 
-    public void logIn() {
+    void logIn() {
         System.out.println("Please insert username");
         String usernameInput = scanner.next();
 
@@ -35,7 +35,7 @@ public class Funcionalities {
         User userInput = new User(usernameInput, passwordInput);
 
         if(signedUpUsers.isEmpty()) {
-            System.out.println("No entries exists,please sign up first");
+            System.out.println("No entries exist,please sign up first!");
         }
         if(signedUpUsers.contains(userInput)){
             System.out.println("Welcome "+usernameInput);
@@ -50,3 +50,5 @@ public class Funcionalities {
 // Difference between this
 /*and this*/
 
+// οι μεταβλητες, που δηλωνουμε ως strings, usernameInput και passwordInput καλο θα ηταν να εχουν ονμαστει διαφορετικα
+//για τη μεθοδο signup και για την logIn?

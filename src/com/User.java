@@ -1,11 +1,11 @@
 package com;
 
-public class User {
+ class User {
 
-    String usermname;
-    String password;
+    private String usermname;
+    private String password;
 
-    public User(String username, String password) {
+    User(String username, String password) {
         this.usermname = username;
         this.password  = password;
     }
