@@ -18,7 +18,7 @@ class Funcionalities {
 
         User userInput = new User(usernameInput, passwordInput);
 
-        if (signedUpUsers.contains(userInput)){
+        if (signedUpUsers.contains(userInput)) {
             System.out.println("This user is already signed up");
         } else {
             signedUpUsers.add(userInput);
@@ -34,12 +34,12 @@ class Funcionalities {
 
         User userInput = new User(usernameInput, passwordInput);
 
-        if(signedUpUsers.isEmpty()) {
+        if (signedUpUsers.isEmpty()) {
             System.out.println("No entries exist,please sign up first!");
         }
-        if(signedUpUsers.contains(userInput)){
-            System.out.println("Welcome "+usernameInput);
-                    } else {
+        if (signedUpUsers.contains(userInput)) {
+            System.out.println("Welcome " + usernameInput);
+        } else {
             System.out.println("Wrong username or password");
         }
 
