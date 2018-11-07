@@ -14,3 +14,8 @@
 
     1. Find all the potential vulnerabilities
     2. and shield your app against them
+ 
+## Add Content
+    
+    1. Add a new feature for the logged-in users. 
+       Give that option in the menu list only for the logged in users.
