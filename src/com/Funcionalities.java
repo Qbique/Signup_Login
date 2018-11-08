@@ -26,6 +26,10 @@ class Funcionalities {
     }
 
     void logIn() {
+        if(signedUpUsers.isEmpty()) {
+            System.out.println("No entries exist,please sign up first!");
+            return;
+        }
         System.out.println("Please insert username");
         String usernameInput = scanner.next();
 
@@ -34,9 +38,6 @@ class Funcionalities {
 
         User userInput = new User(usernameInput, passwordInput);
 
-        if(signedUpUsers.isEmpty()) {
-            System.out.println("No entries exist,please sign up first!");
-        }
         if(signedUpUsers.contains(userInput)){
             System.out.println("Welcome "+usernameInput);
                     } else {
